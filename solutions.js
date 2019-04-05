@@ -20,3 +20,70 @@
  * and
  * concat
  */
+
+function isTrue(input) {
+    return input === true;
+}
+// -------------
+
+
+function isFalse(type) {
+    return type === false;
+}
+
+// -------------
+
+
+function not(nt) {
+    return !nt;
+}
+
+// ---------------
+
+
+function addOne(x) {
+    return parseFloat(x) + 1;
+}
+// --------------
+
+function isNumber(input) {
+    return (!isNaN(input));
+}
+
+function isEven(input) {
+    if (isNumber(input)){
+        return input % 2 === 0;
+    }else{
+        return false;
+    }
+}
+
+//-----------
+
+function isIdentical(m, l) {
+    return (m === l);
+}
+
+// ----------
+
+function isEqual(x, n) {
+    return (x == n);
+}
+
+// ------------
+
+function or(f, u) {
+    return (f || u);
+}
+
+// ------------
+
+function and(j, t) {
+    return (j && t);
+}
+
+//--------------
+
+function concat(p, q) {
+    return "" + p + q;
+}
